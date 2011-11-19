@@ -808,12 +808,55 @@ span.req {
       max-width: 569px;
   }
   
+  #navmenu {
+      height: auto;
+  }
+  
   #navcol {
       display: none;
   }
   
   #maincol {
       width: 100%;
+  }
+  
+  #maincol .col {
+      padding-right: 25px;
+  }
+  
+  .entry-content img,
+  .comment-content img,
+  .widget img {
+      max-width: 97.5%;
+  }
+  
+  img[class*="align"],
+  img[class*="wp-image-"] {
+      height: auto;
+  }
+  
+  img.size-full {
+      max-width: 97.5%;
+      width: auto;
+  }
+  
+  .nextprev {
+      max-width: 97.5%;
+  }
+  
+  .nextprev .next {
+      width: 50%;
+      margin-left: 5px;
+  }
+  
+  .commentArea {
+      width: 90.5%
+  }
+  
+  #navmenu a:link, #navmenu a:visited {
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px 10px;
   }
   
   body {

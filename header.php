@@ -17,6 +17,12 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/bassistance.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/jquery.fitvids.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".entry").fitVids();
+    });
+    </script>
   
 	<?php wp_head(); ?>
 </head>
