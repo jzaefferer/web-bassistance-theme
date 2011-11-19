@@ -841,22 +841,32 @@ span.req {
   }
   
   .nextprev {
-      max-width: 97.5%;
+      max-width: 100%;
+      font-size: 16px;
+      margin-bottom: 40px;
   }
   
   .nextprev .next {
       width: 50%;
       margin-left: 5px;
+      text-align: right;
   }
   
   .commentArea {
       width: 90.5%
   }
   
+  #navmenu {
+      padding: 0;
+  }
+  
   #navmenu a:link, #navmenu a:visited {
-      display: inline-block;
+      display: block;
       font-size: 16px;
-      padding: 5px 10px;
+      padding: 15px 10px;
+      width: auto;
+      text-align: center;
+      border-bottom: 1px solid #636161;
   }
   
   body {
