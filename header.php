@@ -4,8 +4,12 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
-    <meta name="keywords" content="<?php lmkg(); ?>" />
+    <meta name="keywords" content="<?php if (function_exists('lmkg')) lmkg(); ?>" />
     <meta name="description" content="Blog about music and software and hosting of several jQuery plugins like autocomplete, tooltip, treeview and validation" />
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 	
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen"/>
 	

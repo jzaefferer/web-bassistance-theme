@@ -801,3 +801,24 @@ span.req {
 }
 
 #sidebar a img { border: none }
+
+@media screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 500px)  {
+  #container, #footer {
+      width: auto;
+      max-width: 569px;
+  }
+  
+  #navcol {
+      display: none;
+  }
+  
+  #maincol {
+      width: 100%;
+  }
+  
+  body {
+      background: none;
+      background-color: #4d4b4b;
+  }
+
+}
