@@ -209,6 +209,7 @@ h3.entrytitle {
 	font-size: 2.2em;
 	font-weight: normal;
 	font-family: "Times New Roman",Serif;
+	line-height: 1em;
 }
 .entrytitle a {
 	color: #bb4444;
@@ -828,6 +829,10 @@ span.req {
   .comment-content img,
   .widget img {
       max-width: 97.5%;
+  }
+
+  .entrytitle {
+  	font-size: 1.8;
   }
 
   img[class*="align"],
