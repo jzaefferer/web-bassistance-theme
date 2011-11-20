@@ -887,6 +887,11 @@ span.req {
       width: auto;
       padding-right: 20px;
   }
+  
+  .entrymeta {
+      float: none;
+      margin-bottom: 5px;
+  }
 
   body {
       background: none;
