@@ -873,6 +873,20 @@ span.req {
       text-align: center;
       border-bottom: 1px solid #636161;
   }
+  
+  #header {
+      padding: 78px 0 10px;
+  }
+  
+  #header h1 {
+      margin: 0 20px 8px;
+  }
+  
+  #subtitle {
+      background: rgba(0, 0, 0, 0.7);
+      width: auto;
+      padding-right: 20px;
+  }
 
   body {
       background: none;
