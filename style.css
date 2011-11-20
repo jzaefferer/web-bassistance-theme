@@ -39,7 +39,7 @@ body {
 	line-height: 1.6em;
 	margin-top: 30px;
 }
-#container{	
+#container{
  	width: 960px;
  	text-align:left;
  	margin-left: auto;
@@ -106,7 +106,7 @@ ul.post-meta li {
  *	Header					*
  ************************************************/
 #header {
-	padding: 0px;	
+	padding: 0px;
 	margin-top: 0px;
 	padding-top: 78px;
 	padding-bottom: 10px;
@@ -124,7 +124,7 @@ ul.post-meta li {
 	font-size: 2.4em;
 	letter-spacing:0.1em;
 }
-#header h1 a {        
+#header h1 a {
 	color: #fffff7;
 }
 #header h1 a:hover {
@@ -321,7 +321,7 @@ ul {
  	list-style-type: none;
 }
 ul.extern {
-	font-style: italic;	
+	font-style: italic;
 }
 #navcol {
 	padding: 5px;
@@ -451,7 +451,7 @@ ul.extern {
 .ajax-comment-alt {
 	background: #CACFD8;
 }
-.ajax-comment-header a, .ajax-comment-header-alt a {	
+.ajax-comment-header a, .ajax-comment-header-alt a {
 	color: #BB4444;
 }
 .ajax-comment-header a:hover, .ajax-comment-header-alt a:hover {
@@ -807,59 +807,59 @@ span.req {
       width: auto;
       max-width: 569px;
   }
-  
+
   #navmenu {
       height: auto;
   }
-  
+
   #navcol {
       display: none;
   }
-  
+
   #maincol {
       width: 100%;
   }
-  
+
   #maincol .col {
       padding-right: 25px;
   }
-  
+
   .entry-content img,
   .comment-content img,
   .widget img {
       max-width: 97.5%;
   }
-  
+
   img[class*="align"],
   img[class*="wp-image-"] {
       height: auto;
   }
-  
+
   img.size-full {
       max-width: 97.5%;
       width: auto;
   }
-  
+
   .nextprev {
       max-width: 100%;
       font-size: 16px;
       margin-bottom: 40px;
   }
-  
+
   .nextprev .next {
       width: 50%;
       margin-left: 5px;
       text-align: right;
   }
-  
+
   .commentArea {
       width: 90.5%
   }
-  
+
   #navmenu {
       padding: 0;
   }
-  
+
   #navmenu a:link, #navmenu a:visited {
       display: block;
       font-size: 16px;
@@ -868,7 +868,7 @@ span.req {
       text-align: center;
       border-bottom: 1px solid #636161;
   }
-  
+
   body {
       background: none;
       background-color: #4d4b4b;
