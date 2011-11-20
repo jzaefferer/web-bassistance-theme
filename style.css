@@ -879,13 +879,14 @@ span.req {
   }
   
   #header h1 {
-      margin: 0 20px 8px;
+      margin: 0 5px 8px;
   }
   
   #subtitle {
       background: rgba(0, 0, 0, 0.7);
       width: auto;
-      padding-right: 20px;
+      padding-right: 5px;
+      font-size: 0.8em;
   }
   
   .entrymeta {
