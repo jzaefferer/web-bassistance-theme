@@ -900,3 +900,25 @@ span.req {
   }
 
 }
+
+/* customization for iPad in portrait mode */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    #container, #footer {  
+      width: auto;
+      max-width: 768px;
+    }
+    
+    .entrymeta {
+        float: none;
+        margin-bottom: 5px;
+    }
+    
+    .commentArea {
+        width: 90.5%
+    }
+    
+    body {
+        background: none;
+        background-color: #4d4b4b;
+    }
+}
