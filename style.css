@@ -7,7 +7,7 @@ html, body {
 }
 body {
  	text-align: center;
-  	font:12px/15px Georgia,"Times New Roman",Serif;
+  	font:13px/15px Georgia,"Times New Roman",Serif;
 	color: #555558;
 	background-attachment: fixed;
 	background-color: #F3F4E6;
@@ -873,22 +873,22 @@ span.req {
       text-align: center;
       border-bottom: 1px solid #636161;
   }
-  
+
   #header {
       padding: 78px 0 10px;
   }
-  
+
   #header h1 {
       margin: 0 5px 8px;
   }
-  
+
   #subtitle {
       background: rgba(0, 0, 0, 0.7);
       width: auto;
       padding-right: 5px;
       font-size: 0.8em;
   }
-  
+
   .entrymeta {
       float: none;
       margin-bottom: 5px;
@@ -903,20 +903,20 @@ span.req {
 
 /* customization for iPad in portrait mode */
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    #container, #footer {  
+    #container, #footer {
       width: auto;
       max-width: 768px;
     }
-    
+
     .entrymeta {
         float: none;
         margin-bottom: 5px;
     }
-    
+
     .commentArea {
         width: 90.5%
     }
-    
+
     body {
         background: none;
         background-color: #4d4b4b;
