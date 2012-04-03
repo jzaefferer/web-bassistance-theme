@@ -1,4 +1,4 @@
-<?php 
+<?php
 get_header();
 ?>
 
@@ -21,7 +21,7 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
 	für '<?php echo $s; ?>' gefunden.</h2><br />
 <?php } ?>
 
-<?php if (is_category()) { /* CATEGORY HEADING */ ?>				
+<?php if (is_category()) { /* CATEGORY HEADING */ ?>
 		<h2>Alle Artikel der '<?php echo single_cat_title(); ?>' Kategorie</h2><br />
 
 <?php } elseif (is_day()) { /* DAILY HEADING */ ?>
@@ -40,7 +40,7 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
     <h3 class="entrytitle" id="post-<?php the_ID(); ?>">
       <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
     </h3>
-    <?php edit_post_link('<img class="editlink" src="'.get_bloginfo(template_directory).'/images/edit.gif" alt="Edit Link" />'); ?> 
+    <?php edit_post_link('<img class="editlink" src="'.get_bloginfo(template_directory).'/images/edit.gif" alt="Edit Link" />'); ?>
     <div class="entrybody">
                     <?php if (is_search() || is_archive()) {
                                     the_excerpt();
@@ -48,11 +48,12 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
               the_content("Den kompletten Artikel '" . the_title('', '', false) . "' anzeigen &raquo;"); ?>
                               <div class="meta-footer">
             <img src="<?php bloginfo('template_url'); ?>/images/post.gif" alt="#" title="post" />
+            By <?php the_author(); _e(' |'); ?>
             Tagged with <?php the_category(','); _e(' |'); ?>&nbsp;
             <img src="<?php bloginfo('template_url'); ?>/images/comments.gif" alt="*" title="comments" />
             <?php comments_popup_link(' Write a comment',' 1 Comment',' % Comments'); ?>
           </div>
-          
+
           <!-- start ajax display -->
           <?php if (get_option('tnsajaxcomments') == 1) { ?>
             <div id="ajax-comments-notification-<?php the_ID(); ?>">
@@ -62,7 +63,7 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
           <?php } ?>
           <!-- end ajax display -->
         <?php } ?>
-    </div>  	
+    </div>
   </div>
 
 	<?php comments_template(); // Get wp-comments.php template ?>
@@ -73,7 +74,7 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
 <?php endif; ?>
 
 	<div class="bottommeta">
-    <?php posts_nav_link('','','&laquo; Older entries') ?> 
+    <?php posts_nav_link('','','&laquo; Older entries') ?>
     <?php posts_nav_link('','Newer Entries &raquo;','') ?>
 	</div>
 

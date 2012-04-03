@@ -1,4 +1,4 @@
-<?php 
+<?php
 get_header();
 ?>
 
@@ -25,26 +25,26 @@ get_header();
 				</span>
 			</div>
 			<div class="single-meta">
-				<span id="leftmeta"><?php the_date(); echo ' um '; the_time(); ?></span>
+				<span id="leftmeta"><?php the_date(); echo ' at '; the_time(); ?> by <?php the_author(); ?></span>
 				<span id="rightmeta"><?php the_category(',') ?></span>
 			</div>
 
 			<div class="entrybody" style="margin-top:30px;">
 				<?php the_content("Read the rest of '" . the_title('', '', false) . "' &raquo;"); ?>
 				<span class="single-author">-<?php the_author(); ?></span>
-			</div>  
-			<?php if (get_option('tnsthemeta') == 1) {the_meta();} ?>		
+			</div>
+			<?php if (get_option('tnsthemeta') == 1) {the_meta();} ?>
 			<?php link_pages('<p>Page: ', '</p>', 'number', ' &raquo;', '&laquo;'); ?>
 	</div>
 
 	<!--
 	<?php trackback_rdf(); ?>
 	-->
-	
+
 	<?php if (function_exists('paged_comments_template')) { // Load paged comments plugin template if enabled
-		paged_comments_template(); 
-	} else { 
-		comments_template(); 
+		paged_comments_template();
+	} else {
+		comments_template();
 	} ?>
 
 	<?php endwhile; else: ?>
@@ -54,7 +54,7 @@ get_header();
 
 </div>
 </div><!-- The main content column ends  -->
-	
+
 <?php if (get_option('tnssinglepost') == 0) { //if single posts are displayed with sidebar, display it
 	get_sidebar();
 } ?>
