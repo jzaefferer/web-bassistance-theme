@@ -5,30 +5,18 @@ get_header();
 <div id="maincol"><!-- The main content column begins  -->
 <div class="col">
 
-<?php preg_match('#FROM (.*) GROUP BY#', $request, $matches); /* CHECK SEARCH RESULTS */
-$fromwhere = $matches[1];
-$numposts = $wpdb->get_var("SELECT COUNT(DISTINCT ID) FROM $fromwhere");
-
-if (0 < $numposts) $numposts = number_format($numposts); ?>
-
 <?php if (is_search()) { /* SEARCH HEADER */ ?>
-	<h2>
-	<?php if ($numposts==1) { ?>
-      	<?php printf(__('Einen passenden Artikel '), $numposts, 'edit.php'); ?>
-	<?php } else { ?>
-      	<?php printf(__('%1$s passende Artikel '), $numposts, 'edit.php'); ?>
-	<?php } ?>
-	für '<?php echo $s; ?>' gefunden.</h2><br />
+  <h2>Search results for '<?php echo $s; ?>'.</h2><br />
 <?php } ?>
 
 <?php if (is_category()) { /* CATEGORY HEADING */ ?>
-		<h2>Alle Artikel der '<?php echo single_cat_title(); ?>' Kategorie</h2><br />
+    <h2>Alle Artikel der '<?php echo single_cat_title(); ?>' Kategorie</h2><br />
 
 <?php } elseif (is_day()) { /* DAILY HEADING */ ?>
-		<h2>Alle Artikel vom <?php the_date(); ?></h2><br />
+    <h2>Alle Artikel vom <?php the_date(); ?></h2><br />
 
 <?php } elseif (is_month()) { /* MONTHLY HEADING */ ?>
-		<h2>Alle Artikel im <?php the_date(); ?></h2><br />
+    <h2>Alle Artikel im <?php the_date(); ?></h2><br />
 <?php } ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); /* start the loop */ ?>
@@ -48,7 +36,6 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
               the_content("Den kompletten Artikel '" . the_title('', '', false) . "' anzeigen &raquo;"); ?>
                               <div class="meta-footer">
             <img src="<?php bloginfo('template_url'); ?>/images/post.gif" alt="#" title="post" />
-            By <?php the_author(); _e(' |'); ?>
             Tagged with <?php the_category(','); _e(' |'); ?>&nbsp;
             <img src="<?php bloginfo('template_url'); ?>/images/comments.gif" alt="*" title="comments" />
             <?php comments_popup_link(' Write a comment',' 1 Comment',' % Comments'); ?>
@@ -66,17 +53,17 @@ if (0 < $numposts) $numposts = number_format($numposts); ?>
     </div>
   </div>
 
-	<?php comments_template(); // Get wp-comments.php template ?>
+  <?php comments_template(); // Get wp-comments.php template ?>
 
-	<?php endwhile; else: ?>
-	<p>Keinen zur Suchanfrage passenden Artikel gefunden.</p>
+  <?php endwhile; else: ?>
+  <p>Keinen zur Suchanfrage passenden Artikel gefunden.</p>
 
 <?php endif; ?>
 
-	<div class="bottommeta">
+  <div class="bottommeta">
     <?php posts_nav_link('','','&laquo; Older entries') ?>
     <?php posts_nav_link('','Newer Entries &raquo;','') ?>
-	</div>
+  </div>
 
 </div>
 </div><!-- The main content column ends  -->

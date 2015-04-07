@@ -1,29 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
-    <meta name="keywords" content="<?php if (function_exists('lmkg')) lmkg(); ?>" />
-    <meta name="description" content="Blog about music and software and hosting of several jQuery plugins like autocomplete, tooltip, treeview and validation" />
-    
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-	
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen"/>
-	
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/bassistance.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/jquery.fitvids.js"></script>
-    <script>
-    $(document).ready(function(){
-        $(".entry").fitVids();
-    });
-    </script>
-  
+	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>">
+	<meta name="keywords" content="<?php if (function_exists('lmkg')) lmkg(); ?>">
+	<meta name="description" content="Jörn Zaefferer's personal blog about music, software and anything else.">
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>">
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
 	<?php wp_head(); ?>
 </head>
 <body id="home" class="log">
@@ -35,8 +26,8 @@
 				<?php bloginfo('description'); ?>
 			</div>
 		</div>
-    
+
 		<div id="navmenu">
-      <a href="<?php bloginfo('url'); ?>">Blog</a>
-      <?php customPages(); ?>
-    </div>
+	  <a href="<?php bloginfo('url'); ?>">Blog</a>
+	  <?php customPages(); ?>
+	</div>
