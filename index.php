@@ -30,25 +30,10 @@ get_header();
     </h3>
     <?php edit_post_link('<img class="editlink" src="'.get_bloginfo(template_directory).'/images/edit.gif" alt="Edit Link" />'); ?>
     <div class="entrybody">
-                    <?php if (is_search() || is_archive()) {
-                                    the_excerpt();
-                              } else {
-              the_content("Den kompletten Artikel '" . the_title('', '', false) . "' anzeigen &raquo;"); ?>
-                              <div class="meta-footer">
-            <img src="<?php bloginfo('template_url'); ?>/images/post.gif" alt="#" title="post" />
-            Tagged with <?php the_category(','); _e(' |'); ?>&nbsp;
-            <img src="<?php bloginfo('template_url'); ?>/images/comments.gif" alt="*" title="comments" />
-            <?php comments_popup_link(' Write a comment',' 1 Comment',' % Comments'); ?>
-          </div>
-
-          <!-- start ajax display -->
-          <?php if (get_option('tnsajaxcomments') == 1) { ?>
-            <div id="ajax-comments-notification-<?php the_ID(); ?>">
-            </div>
-            <div id="ajax-comments-<?php the_ID(); ?>" class="ajax-comments">
-            </div>
-          <?php } ?>
-          <!-- end ajax display -->
+        <?php if (is_search() || is_archive()) {
+            the_excerpt();
+        } else {
+            the_content("Den kompletten Artikel '" . the_title('', '', false) . "' anzeigen &raquo;"); ?>
         <?php } ?>
     </div>
   </div>

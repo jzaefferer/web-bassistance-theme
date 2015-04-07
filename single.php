@@ -18,17 +18,15 @@ get_header();
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); /* start the loop */ ?>
 	<div class="entry">
+		<div class="entrymeta">
+			<?php the_date() ?>
+		</div>
 			<div class="single-metahead">
-				<span class="single-title" id="post-<?php the_ID(); ?>">
+				<h3 class="single-title" id="post-<?php the_ID(); ?>">
 					<?php the_title(); ?>
-					<?php edit_post_link('<img class="editlink" src="'.get_bloginfo(template_directory).'/images/edit.gif" alt="Edit Link" />'); ?>
-				</span>
+				</h3>
+				<?php edit_post_link('<img class="editlink" src="'.get_bloginfo(template_directory).'/images/edit.gif" alt="Edit Link" />'); ?>
 			</div>
-			<div class="single-meta">
-				<span id="leftmeta"><?php the_date(); echo ' at '; the_time(); ?> by <?php the_author(); ?></span>
-				<span id="rightmeta"><?php the_category(',') ?></span>
-			</div>
-
 			<div class="entrybody" style="margin-top:30px;">
 				<?php the_content("Read the rest of '" . the_title('', '', false) . "' &raquo;"); ?>
 				<span class="single-author">-<?php the_author(); ?></span>
